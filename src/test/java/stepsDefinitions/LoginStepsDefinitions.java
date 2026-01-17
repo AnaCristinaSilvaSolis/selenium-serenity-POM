@@ -8,12 +8,6 @@ public class LoginStepsDefinitions {
 
     loginStep loginStep = new loginStep();
 
-    @When("the user enters the credentials")
-    public void theUserEntersTheCredentials() {
-        loginStep.EnterCredentials();
-        loginStep.ClickLogin();
-    }
-
     @Then("the user looks at the home page")
     public void theUserLooksAtTheHomePage() {
         try {
@@ -21,7 +15,17 @@ public class LoginStepsDefinitions {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
         loginStep.ViewLogo();
+    }
+
+    @When("the user enters the {string} as email")
+    public void theUserEntersTheEmail(String email) {
+        loginStep.EnterEmail(email);
+    }
+
+    @When("the user enters the {string} as password")
+    public void theUserEntersThePassword(String password) {
+        loginStep.EnterPassword(password);
+        loginStep.ClickLogin();
     }
 }

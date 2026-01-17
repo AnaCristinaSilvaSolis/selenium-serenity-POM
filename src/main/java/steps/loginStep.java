@@ -15,12 +15,15 @@ public class loginStep {
 
 
     @Step
-    public void EnterCredentials() {
+    public void EnterEmail(String email) {
         Logs.info("Ingresando usuario");
-        GoogleChromeDriver.driver.findElement(loginPage.getTXTUSERNAME()).sendKeys("standard_user");
+        GoogleChromeDriver.driver.findElement(loginPage.getTXTUSERNAME()).sendKeys(email);
+    }
 
+    @Step
+    public void EnterPassword(String password) {
         Logs.info("Ingresando contraseña");
-        GoogleChromeDriver.driver.findElement(loginPage.getTXTPASSWORD()).sendKeys("secret_sauce");
+        GoogleChromeDriver.driver.findElement(loginPage.getTXTPASSWORD()).sendKeys(password);
     }
 
     @Step
