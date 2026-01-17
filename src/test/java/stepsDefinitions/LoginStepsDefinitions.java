@@ -18,14 +18,14 @@ public class LoginStepsDefinitions {
         loginStep.ViewLogo();
     }
 
-    @When("the user enters the {string} as email")
-    public void theUserEntersTheEmail(String email) {
-        loginStep.EnterEmail(email);
+    @When("the user enters the email")
+    public void theUserEntersTheEmail() {
+        loginStep.EnterEmail();
     }
 
-    @When("the user enters the {string} as password")
-    public void theUserEntersThePassword(String password) {
-        loginStep.EnterPassword(password);
+    @When("the user enters the password")
+    public void theUserEntersThePassword() {
+        loginStep.EnterPassword();
         loginStep.ClickLogin();
     }
 }

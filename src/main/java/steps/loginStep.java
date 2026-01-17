@@ -5,7 +5,12 @@ import net.serenitybdd.annotations.Step;
 import org.junit.Assert;
 import pages.HomePage;
 import pages.LoginPage;
+import utils.DataDrivenExcel;
+import utils.Excel;
 import utils.Logs;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class loginStep {
@@ -13,17 +18,24 @@ public class loginStep {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
 
+    DataDrivenExcel dataDrivenExcel = new DataDrivenExcel();
+    Map<String, String> data = new HashMap<>();
+
 
     @Step
-    public void EnterEmail(String email) {
+    public void EnterEmail() {
         Logs.info("Ingresando usuario");
-        GoogleChromeDriver.driver.findElement(loginPage.getTXTUSERNAME()).sendKeys(email);
+        Excel excel = new Excel(Excel.rutaExcelDev, "Login", true, 1);
+        data = DataDrivenExcel.leerExcel(excel);
+        GoogleChromeDriver.driver.findElement(loginPage.getTXTUSERNAME()).sendKeys(data.get("email"));
     }
 
     @Step
-    public void EnterPassword(String password) {
+    public void EnterPassword() {
         Logs.info("Ingresando contraseña");
-        GoogleChromeDriver.driver.findElement(loginPage.getTXTPASSWORD()).sendKeys(password);
+        Excel excel = new Excel(Excel.rutaExcelDev, "Login", true, 1);
+        data = DataDrivenExcel.leerExcel(excel);
+        GoogleChromeDriver.driver.findElement(loginPage.getTXTPASSWORD()).sendKeys(data.get("password"));
     }
 
     @Step

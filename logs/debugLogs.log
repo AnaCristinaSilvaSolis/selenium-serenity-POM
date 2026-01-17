@@ -1,5 +1,5 @@
-[2026-01-17 16:13:22.996] [DEBUG] [io.cucumber.core.plugin.SerenityReporter] - Running feature from file:///D:/CONOCIMIENTO/QA%20AUTOMATION/seleniumPOM/src/test/resources/features/login.feature
-[2026-01-17 16:13:23.078] [INFO ] [] - 
+[2026-01-17 17:14:51.302] [DEBUG] [io.cucumber.core.plugin.SerenityReporter] - Running feature from file:///D:/CONOCIMIENTO/QA%20AUTOMATION/seleniumPOM/src/test/resources/features/login.feature
+[2026-01-17 17:14:51.434] [INFO ] [] - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -16,13 +16,13 @@
  Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
 -------------------------------------------------------------------------------------
 
-[2026-01-17 16:13:23.090] [DEBUG] [net.thucydides.core.steps.StepEventBus] - Test suite started for story net.thucydides.model.domain.Story@c4bded20
-[2026-01-17 16:13:23.104] [INFO ] [] - Test Suite Started: Login
-[2026-01-17 16:13:23.235] [DEBUG] [io.cucumber.core.plugin.SerenityReporter] - Running feature from file:///D:/CONOCIMIENTO/QA%20AUTOMATION/seleniumPOM/src/test/resources/features/login.feature
-[2026-01-17 16:13:23.235] [DEBUG] [net.thucydides.core.steps.StepEventBus] - Test suite started for story net.thucydides.model.domain.Story@c4bded20
-[2026-01-17 16:13:23.235] [INFO ] [] - Test Suite Started: Login
-[2026-01-17 16:13:23.327] [DEBUG] [io.cucumber.core.plugin.SerenityReporter] - Running feature from file:///D:/CONOCIMIENTO/QA%20AUTOMATION/seleniumPOM/src/test/resources/features/login.feature
-[2026-01-17 16:13:23.484] [INFO ] [] - 
+[2026-01-17 17:14:51.446] [DEBUG] [net.thucydides.core.steps.StepEventBus] - Test suite started for story net.thucydides.model.domain.Story@c4bded20
+[2026-01-17 17:14:51.456] [INFO ] [] - Test Suite Started: Login
+[2026-01-17 17:14:51.569] [DEBUG] [io.cucumber.core.plugin.SerenityReporter] - Running feature from file:///D:/CONOCIMIENTO/QA%20AUTOMATION/seleniumPOM/src/test/resources/features/login.feature
+[2026-01-17 17:14:51.576] [DEBUG] [net.thucydides.core.steps.StepEventBus] - Test suite started for story net.thucydides.model.domain.Story@c4bded20
+[2026-01-17 17:14:51.576] [INFO ] [] - Test Suite Started: Login
+[2026-01-17 17:14:51.669] [DEBUG] [io.cucumber.core.plugin.SerenityReporter] - Running feature from file:///D:/CONOCIMIENTO/QA%20AUTOMATION/seleniumPOM/src/test/resources/features/login.feature
+[2026-01-17 17:14:51.806] [INFO ] [] - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
@@ -30,11 +30,37 @@
 
 login success(login;login-success)
 --------------------------------------------------------------------------------
-[2026-01-17 16:13:25.824] [INFO ] [AUTOMATION] - Ingresando usuario
-[2026-01-17 16:13:25.915] [INFO ] [AUTOMATION] - Ingresando contraseña
-[2026-01-17 16:13:25.970] [INFO ] [AUTOMATION] - Dando clic en el botón 'login'
-[2026-01-17 16:13:30.065] [INFO ] [AUTOMATION] - Verificando existencia del logo
-[2026-01-17 16:13:30.427] [INFO ] [] - 
+[2026-01-17 17:14:54.400] [INFO ] [AUTOMATION] - Ingresando usuario
+[2026-01-17 17:14:54.732] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /customXml/_rels/item1.xml.rels
+[2026-01-17 17:14:54.735] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /customXml/_rels/item2.xml.rels
+[2026-01-17 17:14:54.739] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /customXml/_rels/item3.xml.rels
+[2026-01-17 17:14:54.749] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2026-01-17 17:14:54.754] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[2026-01-17 17:14:54.756] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /_rels/.rels
+[2026-01-17 17:14:55.586] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml
+[2026-01-17 17:14:55.586] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml
+[2026-01-17 17:14:55.586] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml
+[2026-01-17 17:14:55.586] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[2026-01-17 17:14:55.586] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXmlProps
+[2026-01-17 17:14:55.586] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXmlProps
+[2026-01-17 17:14:55.586] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXmlProps
+[2026-01-17 17:14:55.863] [INFO ] [AUTOMATION] - Ingresando contraseña
+[2026-01-17 17:14:55.880] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /customXml/_rels/item1.xml.rels
+[2026-01-17 17:14:55.883] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /customXml/_rels/item2.xml.rels
+[2026-01-17 17:14:55.884] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /customXml/_rels/item3.xml.rels
+[2026-01-17 17:14:55.888] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2026-01-17 17:14:55.888] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[2026-01-17 17:14:55.888] [DEBUG] [org.apache.poi.openxml4j.opc.PackageRelationshipCollection] - Parsing relationship: /_rels/.rels
+[2026-01-17 17:14:55.910] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml
+[2026-01-17 17:14:55.912] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml
+[2026-01-17 17:14:55.912] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml
+[2026-01-17 17:14:55.912] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[2026-01-17 17:14:55.912] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXmlProps
+[2026-01-17 17:14:55.912] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXmlProps
+[2026-01-17 17:14:55.914] [DEBUG] [org.apache.poi.ooxml.POIXMLFactory] - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXmlProps
+[2026-01-17 17:14:56.008] [INFO ] [AUTOMATION] - Dando clic en el botón 'login'
+[2026-01-17 17:15:00.196] [INFO ] [AUTOMATION] - Verificando existencia del logo
+[2026-01-17 17:15:00.535] [INFO ] [] - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
  |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
@@ -42,12 +68,12 @@ login success(login;login-success)
 
 login success
 ----------------------------------------------------------------------
-[2026-01-17 16:13:30.457] [DEBUG] [net.thucydides.model.reports.ReportService] - Reporting formats: [JSON]
-[2026-01-17 16:13:30.468] [DEBUG] [net.thucydides.model.reports.ReportService] - Reporting formats: [JSON]
-[2026-01-17 16:13:30.485] [DEBUG] [net.thucydides.model.reports.ReportService] - Generating reports for 1 test outcomes using: net.thucydides.model.reports.json.JSONTestOutcomeReporter@7d29fc6
-[2026-01-17 16:13:30.485] [DEBUG] [net.thucydides.model.reports.ReportService] - Processing test outcome login:login success
-[2026-01-17 16:13:30.485] [DEBUG] [net.thucydides.model.reports.ReportService] - net.thucydides.model.reports.json.JSONTestOutcomeReporter@7d29fc6: Generating report for test outcome: login:login success
-[2026-01-17 16:13:30.505] [DEBUG] [net.thucydides.model.reports.json.JSONTestOutcomeReporter] - Generating JSON report for login success to file D:\CONOCIMIENTO\QA AUTOMATION\seleniumPOM\target\site\serenity\bb74c2d0803eb056a20abf30ed8bde6b6ad1193ac7ef8e5501133d2e56e62bb9.json)
-[2026-01-17 16:13:30.566] [DEBUG] [net.thucydides.model.reports.ReportService] - Processing test outcome login:login success done
-[2026-01-17 16:13:30.566] [DEBUG] [net.thucydides.model.reports.ReportService] - Shutting down executor service
-[2026-01-17 16:13:30.566] [DEBUG] [net.thucydides.model.reports.ReportService] - Reports generated in: 81 ms
+[2026-01-17 17:15:00.565] [DEBUG] [net.thucydides.model.reports.ReportService] - Reporting formats: [JSON]
+[2026-01-17 17:15:00.578] [DEBUG] [net.thucydides.model.reports.ReportService] - Reporting formats: [JSON]
+[2026-01-17 17:15:00.594] [DEBUG] [net.thucydides.model.reports.ReportService] - Generating reports for 1 test outcomes using: net.thucydides.model.reports.json.JSONTestOutcomeReporter@59ed8460
+[2026-01-17 17:15:00.594] [DEBUG] [net.thucydides.model.reports.ReportService] - Processing test outcome login:login success
+[2026-01-17 17:15:00.597] [DEBUG] [net.thucydides.model.reports.ReportService] - net.thucydides.model.reports.json.JSONTestOutcomeReporter@59ed8460: Generating report for test outcome: login:login success
+[2026-01-17 17:15:00.610] [DEBUG] [net.thucydides.model.reports.json.JSONTestOutcomeReporter] - Generating JSON report for login success to file D:\CONOCIMIENTO\QA AUTOMATION\seleniumPOM\target\site\serenity\bb74c2d0803eb056a20abf30ed8bde6b6ad1193ac7ef8e5501133d2e56e62bb9.json)
+[2026-01-17 17:15:00.658] [DEBUG] [net.thucydides.model.reports.ReportService] - Processing test outcome login:login success done
+[2026-01-17 17:15:00.658] [DEBUG] [net.thucydides.model.reports.ReportService] - Shutting down executor service
+[2026-01-17 17:15:00.658] [DEBUG] [net.thucydides.model.reports.ReportService] - Reports generated in: 64 ms
