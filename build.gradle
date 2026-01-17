@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'idea'
+    id 'eclipse'
+    id 'application'
+    id 'java-library'
+    id 'jacoco'
+    id 'maven-publish'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '2.4.34'
+}
+
+group 'org.app'
+version '1.0-SNAPSHOT'
+description = 'Automatization for App'
+
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation "net.serenity-bdd:serenity-cucumber:4.3.4"
+    implementation("io.cucumber:datatable:7.33.0")
+    testImplementation "junit:junit:4.13.2"
+
+    implementation("net.serenity-bdd:serenity-screenplay:4.3.4")
+    implementation("net.serenity-bdd:serenity-screenplay-webdriver:4.3.4")
+    implementation("net.serenity-bdd:serenity-junit:4.3.4")
+    implementation("net.serenity-bdd:serenity-core:4.3.4")
+    implementation("net.serenity-bdd:serenity-report-resources:4.3.4")
+
+    implementation("org.mockito:mockito-core:5.21.0")
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    implementation 'org.assertj:assertj-core:3.12.2'
+
+
+    implementation(platform("org.apache.logging.log4j:log4j:2.25.3"))
+    implementation("org.apache.logging.log4j:log4j-core:2.25.3")
+    implementation("org.apache.logging.log4j:log4j-api:2.25.3")
+    implementation("org.apache.logging.log4j:log4j-slf4j2-impl:2.25.3")
+}
+
+test {
+    useJUnit {
+        include "**/*";
+        gradle.startParameter.continueOnFailure = true
+        testLogging.showStandardStreams = true
+        systemProperties System.getProperties()
+        systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    }
+}
