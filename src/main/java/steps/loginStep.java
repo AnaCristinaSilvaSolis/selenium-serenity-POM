@@ -23,32 +23,31 @@ public class loginStep {
 
 
     @Step
-    public void EnterEmail() {
+    public void EnterEmail(int row) {
         Logs.info("Ingresando usuario");
-        Excel excel = new Excel(Excel.rutaExcelDev, "Login", true, 1);
+        Excel excel = new Excel(Excel.rutaExcelDev, "Login", true, row);
         data = DataDrivenExcel.leerExcel(excel);
-        GoogleChromeDriver.driver.findElement(loginPage.getTXTUSERNAME()).sendKeys(data.get("email"));
+        GoogleChromeDriver.driver.findElement(loginPage.getTxtUserName()).sendKeys(data.get("email"));
     }
 
     @Step
-    public void EnterPassword() {
+    public void EnterPassword(int row) {
         Logs.info("Ingresando contraseña");
-        Excel excel = new Excel(Excel.rutaExcelDev, "Login", true, 1);
+        Excel excel = new Excel(Excel.rutaExcelDev, "Login", true, row);
         data = DataDrivenExcel.leerExcel(excel);
-        GoogleChromeDriver.driver.findElement(loginPage.getTXTPASSWORD()).sendKeys(data.get("password"));
+        GoogleChromeDriver.driver.findElement(loginPage.getTxtUserPassword()).sendKeys(data.get("password"));
     }
 
     @Step
     public void ClickLogin() {
         Logs.info("Dando clic en el botón 'login'");
-        GoogleChromeDriver.driver.findElement(loginPage.getBTNLOGIN()).click();
+        GoogleChromeDriver.driver.findElement(loginPage.getBtnLogin()).click();
     }
 
     @Step
     public void ViewLogo() {
         Logs.info("Verificando existencia del logo");
-        final var logoObtained = GoogleChromeDriver.driver.findElement(homePage.getLOGOPAGE());
-
+        final var logoObtained = GoogleChromeDriver.driver.findElement(homePage.getLogoPage());
         Assert.assertTrue(logoObtained.isDisplayed());
     }
 }
